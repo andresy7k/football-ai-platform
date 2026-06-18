@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+/* Remove default iOS input styling */
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Prevent pull-to-refresh when it would cause issues */
+html {
+  overscroll-behavior: none;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--color-bg-base-light);
+    color: var(--color-text-primary-light);
+  }
+}

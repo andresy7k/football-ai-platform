@@ -1,0 +1,151 @@
+:root {
+  /* Font Stacks */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    "Segoe UI", Roboto, sans-serif;
+  --font-rounded: -apple-system, BlinkMacSystemFont, "SF Pro Rounded",
+    "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "SF Pro Text", "JetBrains Mono", "Cascadia Code",
+    Menlo, monospace;
+
+  /* Display */
+  --text-display-large: 48px;
+  --text-display-large-lh: 1.1;
+  --text-display: 34px;
+  --text-display-lh: 1.1;
+  --text-display-small: 28px;
+  --text-display-small-lh: 1.2;
+
+  /* Headlines */
+  --text-headline-large: 22px;
+  --text-headline-large-lh: 1.2;
+  --text-headline: 17px;
+  --text-headline-lh: 1.3;
+  --text-headline-small: 15px;
+  --text-headline-small-lh: 1.3;
+
+  /* Body */
+  --text-body: 17px;
+  --text-body-lh: 1.4;
+  --text-body-small: 15px;
+  --text-body-small-lh: 1.4;
+
+  /* Subtext & Captions */
+  --text-subhead: 13px;
+  --text-subhead-lh: 1.4;
+  --text-caption: 12px;
+  --text-caption-lh: 1.3;
+  --text-caption-small: 11px;
+  --text-caption-small-lh: 1.2;
+
+  /* Labels (tab bar, badges) */
+  --text-label: 10px;
+  --text-label-lh: 1.2;
+  --text-label-ls: 0.07em;
+
+  /* Monospaced Numbers */
+  --text-number-large: 48px;
+  --text-number: 22px;
+  --text-number-small: 15px;
+}
+
+/* Utility Classes */
+.text-display-large {
+  font-size: var(--text-display-large);
+  line-height: var(--text-display-large-lh);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.text-display {
+  font-size: var(--text-display);
+  line-height: var(--text-display-lh);
+  font-weight: 700;
+  letter-spacing: -0.012em;
+}
+
+.text-display-small {
+  font-size: var(--text-display-small);
+  line-height: var(--text-display-small-lh);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.text-headline-large {
+  font-size: var(--text-headline-large);
+  line-height: var(--text-headline-large-lh);
+  font-weight: 600;
+}
+
+.text-headline {
+  font-size: var(--text-headline);
+  line-height: var(--text-headline-lh);
+  font-weight: 600;
+}
+
+.text-headline-small {
+  font-size: var(--text-headline-small);
+  line-height: var(--text-headline-small-lh);
+  font-weight: 600;
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: var(--text-body-lh);
+  font-weight: 400;
+}
+
+.text-body-small {
+  font-size: var(--text-body-small);
+  line-height: var(--text-body-small-lh);
+  font-weight: 400;
+}
+
+.text-subhead {
+  font-size: var(--text-subhead);
+  line-height: var(--text-subhead-lh);
+  font-weight: 500;
+}
+
+.text-caption {
+  font-size: var(--text-caption);
+  line-height: var(--text-caption-lh);
+  font-weight: 400;
+}
+
+.text-caption-small {
+  font-size: var(--text-caption-small);
+  line-height: var(--text-caption-small-lh);
+  font-weight: 400;
+}
+
+.text-label {
+  font-size: var(--text-label);
+  line-height: var(--text-label-lh);
+  font-weight: 500;
+  letter-spacing: var(--text-label-ls);
+  text-transform: uppercase;
+}
+
+.text-number-large {
+  font-family: var(--font-mono);
+  font-size: var(--text-number-large);
+  line-height: 1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-number {
+  font-family: var(--font-mono);
+  font-size: var(--text-number);
+  line-height: 1;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-number-small {
+  font-family: var(--font-mono);
+  font-size: var(--text-number-small);
+  line-height: 1;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}

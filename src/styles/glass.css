@@ -1,0 +1,68 @@
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-heavy {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-hover {
+  transition: background var(--motion-fast) var(--curve-enter);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.glass-hover:active {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.glass-tab-bar {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-sheet {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(60, 60, 67, 0.12);
+  }
+
+  .glass-heavy {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(60, 60, 67, 0.15);
+  }
+
+  .glass-hover:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .glass-hover:active {
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .glass-tab-bar {
+    background: rgba(255, 255, 255, 0.8);
+    border-top-color: rgba(60, 60, 67, 0.15);
+  }
+
+  .glass-sheet {
+    background: rgba(240, 240, 242, 0.95);
+  }
+}

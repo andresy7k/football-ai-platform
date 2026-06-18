@@ -1,0 +1,23 @@
+{
+  "name": "Football AI Analytics",
+  "short_name": "Football AI",
+  "description": "Premium AI-powered football predictions and portfolio tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "apple-touch-icon": "/images/logo.svg",
+  "icons": [
+    {
+      "src": "/images/logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

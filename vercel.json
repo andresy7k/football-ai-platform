@@ -1,0 +1,22 @@
+{
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "crons": [
+    {
+      "path": "/api/cron/fetch-matches",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/cron/generate-analyses",
+      "schedule": "15 6 * * *"
+    },
+    {
+      "path": "/api/cron/fetch-odds",
+      "schedule": "30 6 * * *"
+    },
+    {
+      "path": "/api/cron/settle-bets",
+      "schedule": "0 23 * * *"
+    }
+  ]
+}

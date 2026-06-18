@@ -1,0 +1,97 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #007aff;
+  --color-primary-hover: #0066d6;
+  --color-indigo: #5856d6;
+  --color-teal: #30d158;
+  --color-orange: #ff9500;
+  --color-red: #ff3b30;
+  --color-yellow: #ffd60a;
+
+  /* Dark Mode Backgrounds */
+  --color-bg-base: #000000;
+  --color-bg-elevated: #0a0a0a;
+  --color-bg-tertiary: #141414;
+  --color-glass: rgba(255, 255, 255, 0.06);
+  --color-glass-heavy: rgba(255, 255, 255, 0.1);
+  --color-glass-hover: rgba(255, 255, 255, 0.14);
+  --color-tab-bar: rgba(0, 0, 0, 0.85);
+  --color-sheet-overlay: rgba(0, 0, 0, 0.6);
+
+  /* Light Mode Backgrounds */
+  --color-bg-base-light: #ffffff;
+  --color-bg-elevated-light: #f5f5f7;
+  --color-bg-tertiary-light: #f0f0f2;
+  --color-glass-light: rgba(255, 255, 255, 0.8);
+  --color-glass-heavy-light: rgba(255, 255, 255, 0.9);
+  --color-tab-bar-light: rgba(255, 255, 255, 0.8);
+  --color-sheet-overlay-light: rgba(0, 0, 0, 0.3);
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #98989d;
+  --color-text-tertiary: #636366;
+  --color-text-primary-light: #1d1d1f;
+  --color-text-secondary-light: #6e6e73;
+  --color-text-tertiary-light: #8e8e93;
+
+  /* Semantic Colors */
+  --color-win: #30d158;
+  --color-loss: #ff3b30;
+  --color-push: #8e8e93;
+  --color-confidence-high: #30d158;
+  --color-confidence-medium: #ff9500;
+  --color-confidence-low: #ff3b30;
+  --color-team-home: #007aff;
+  --color-team-away: #ff9500;
+
+  /* Borders & Dividers */
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-border-subtle-light: rgba(60, 60, 67, 0.12);
+  --color-divider: rgba(255, 255, 255, 0.15);
+  --color-divider-light: rgba(60, 60, 67, 0.15);
+
+  /* Spacing */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+
+  /* Border Radius */
+  --radius-card: 16px;
+  --radius-sheet: 20px;
+  --radius-badge: 12px;
+  --radius-button: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.6);
+
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-sheet: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}

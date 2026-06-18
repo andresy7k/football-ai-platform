@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/typography.css";
+@import "../styles/motion.css";
+@import "../styles/glass.css";
+@import "../styles/accessibility.css";
+@import "../styles/reset.css";
+
+@theme inline {
+  --color-background: var(--color-bg-base);
+  --color-foreground: var(--color-text-primary);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-secondary: var(--color-text-secondary);
+  --color-destructive: var(--color-red);
+  --radius: var(--radius-card);
+}
