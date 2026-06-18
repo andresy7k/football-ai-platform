@@ -56,6 +56,7 @@ const MOCK_MATCHES: MatchWithDetails[] = [
       confidence: 82,
       predicted_winner: "home",
       recommended_bet: "Home Win",
+      risk_score: 25,
       quick_analysis:
         "Manchester City are in exceptional form at home, winning 8 of their last 10. Real Madrid's away form has been inconsistent. City's pressing game should overwhelm Madrid's midfield.",
       deep_analysis: {
@@ -125,6 +126,7 @@ const MOCK_MATCHES: MatchWithDetails[] = [
       confidence: 65,
       predicted_winner: "home",
       recommended_bet: "Home Win",
+      risk_score: 50,
       quick_analysis:
         "Barcelona have been strong at Camp Nou but Atletico's defense is the best in the league. This could be a tight affair.",
       deep_analysis: {
@@ -194,6 +196,7 @@ const MOCK_MATCHES: MatchWithDetails[] = [
       confidence: 71,
       predicted_winner: "home",
       recommended_bet: "Over 2.5 Goals",
+      risk_score: 40,
       quick_analysis:
         "Der Klassiker. Bayern at home are favorites but Dortmund have the pace to counter. Expect goals.",
       deep_analysis: {
@@ -263,6 +266,7 @@ const MOCK_MATCHES: MatchWithDetails[] = [
       confidence: 58,
       predicted_winner: "draw",
       recommended_bet: "Draw",
+      risk_score: 60,
       quick_analysis:
         "The Milan derby is always unpredictable. Both sides are evenly matched this season.",
       deep_analysis: {
@@ -332,6 +336,7 @@ const MOCK_MATCHES: MatchWithDetails[] = [
       confidence: 78,
       predicted_winner: "home",
       recommended_bet: "Home Win",
+      risk_score: 30,
       quick_analysis:
         "PSG's firepower at home is too much for Marseille. Le Classique tends to favor the home side.",
       deep_analysis: {

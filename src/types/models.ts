@@ -60,6 +60,7 @@ export interface Analysis {
   confidence: number;
   predicted_winner: string | null;
   recommended_bet: string | null;
+  risk_score: number;
   quick_analysis: string;
   deep_analysis: DeepAnalysis | null;
   odds_snapshot: OddsSnapshot | null;
