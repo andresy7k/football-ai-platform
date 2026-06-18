@@ -1,21 +1,53 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { createServerClient } from "@supabase/ssr";
+import { NextResponse, type NextRequest } from "next/server";
 
-// Protected routes require authentication
-const protectedPaths = ["/(dashboard)"];
+const protectedPaths = ["/today", "/portfolio", "/analytics", "/profile", "/saved"];
+const authPaths = ["/auth/login"];
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Check if route is protected
-  const isProtected = protectedPaths.some((path) => pathname.startsWith(path));
+  const isProtected = protectedPaths.some((path) => pathname === path || pathname.startsWith(path + "/"));
+  const isAuth = authPaths.some((path) => pathname === path || pathname.startsWith(path + "/"));
 
-  if (isProtected) {
-    // Auth check will be implemented in Phase 2
-    // For now, allow all requests
-    return NextResponse.next();
+  let supabaseResponse = NextResponse.next({ request });
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
+          supabaseResponse = NextResponse.next({ request });
+          cookiesToSet.forEach(({ name, value, options }) =>
+            supabaseResponse.cookies.set(name, value, options),
+          );
+        },
+      },
+    },
+  );
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // Redirect to login if protected and not authenticated
+  if (isProtected && !user) {
+    const url = new URL("/auth/login", request.url);
+    url.searchParams.set("redirect", pathname);
+    return NextResponse.redirect(url);
   }
 
-  return NextResponse.next();
+  // Redirect to today if authenticated and on auth page
+  if (isAuth && user) {
+    return NextResponse.redirect(new URL("/today", request.url));
+  }
+
+  return supabaseResponse;
 }
 
 export const config = {
